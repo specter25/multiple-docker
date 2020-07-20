@@ -24,3 +24,17 @@ after_success:
   - docker push ujjwal25/multi-nginx 
   - docker push ujjwal25/multi-server
   - docker push ujjwal25/multi-worker
+
+
+# deploy:
+#   provider: elasticbeanstack
+#   region: "us-east-1"
+#   app: "multi-docker"
+#   env: "MultiDocker-env"
+#   bucket_name: "not enered"
+#   bucket_path: "multi-docker"
+#   on:
+#     branch: master
+#   access_key_id: $AWS_ACCESS_KEY
+#   secret_acces_key: $AWS_SECRET_KEY
+#   skip_cleanup: true
